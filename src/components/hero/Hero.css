@@ -1,93 +1,81 @@
-/*******************************
-  Hero background
-********************************/
 .hero {
-  position: relative;
-  margin: 5vh 12vh 0 14vh;
-
-  display: flex;
   align-items: center;
-  justify-content: center;
   background-color: #114542;
-
-  height: 80vh;
-  min-height: 35rem;
-  width: 190vh;
-
-  overflow: hidden;
   border-radius: 5vh;
+  display: flex;
+  height: 80vh;
+  justify-content: center;
+  margin: 5vh 12vh 0 14vh;
+  min-height: 35rem;
+  overflow: hidden;
+  position: relative;
+  width: 190vh;
 }
-
 /*******************************
   Central icon and text
 ********************************/
-.icon-holder {
-  position: relative;
-  z-index: 1;
-
+.iconHolder {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  padding: 2rem;
   height: 19rem;
+  justify-content: center;
+  padding: 2rem;
+  position: relative;
+  z-index: 1;
 }
 
-.icon-holder__icon {
+.iconLogo {
   position: absolute;
   top: 18vh;
   width: 16rem;
 }
 
-.icon-holder__icon img {
-  width: 150%;
+.iconLogo img {
   margin-left: -8vh;
+  width: 150%;
 }
 
-.icon-holder__text {
-  font-size: 3rem;
-  position: absolute;
-  margin-left: 5vh;
-  bottom: 13vh;
+.iconText {
+  bottom: 9vh;
   color: #e0d4ca;
+  font-size: 3rem;
+  font-weight: 300;
+  margin-left: 5vh;
+  position: absolute;
 }
 
 /*******************************
   Animal images
 ********************************/
-.animal-image {
+.figuraImagen {
   position: absolute;
 }
 
-.animal-image img {
+.figuraImagen img {
   max-width: 100%;
 }
 
-.animal-image__one {
+.figuraImagenUno {
   left: -9rem;
-  width: 40vw;
   max-width: 550px;
-}
-
-.animal-image__two {
-  top: 0;
-  right: 0;
   width: 40vw;
-  max-width: 390px;
 }
 
-.animal-image__three {
+.figuraImagenDos {
+  right: 0;
+  max-width: 390px;
+  top: 0;
+  width: 40vw;
+}
+
+.figuraImagenTres {
   bottom: 1rem;
+  max-width: 290px;
   right: 1rem;
   width: 40vw;
-  max-width: 290px;
 }
-
-/*******************************
-  Responsive changes
-********************************/
-@media screen and (max-width: 48em) {
+@media screen and (max-width: 876px) {
   .hero {
     height: 70vh;
   }
@@ -95,34 +83,34 @@
   /*******************************
     Icon and text cover
   ********************************/
-  .icon-holder {
-    width: 100%;
+  .iconHolder {
     height: 100%;
     justify-content: flex-end;
+    width: 100%;
   }
 
-  .icon-holder__icon {
-    top: auto;
+  .iconLogo {
     bottom: 7rem;
     max-width: 10rem;
+    top: auto;
   }
 
   /*******************************
     Reposition images
   ********************************/
-  .animal-image__one {
+  .figuraImagenUno {
     top: -5rem;
     width: 80vw;
   }
 
-  .animal-image__two {
+  .figuraImagenDos {
     right: 0rem;
   }
 
-  .animal-image__three {
-    top: 18rem;
+  .figuraImagenTres {
     bottom: auto;
     right: -5rem;
+    top: 18rem;
     width: 50vw;
   }
 }

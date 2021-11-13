@@ -1,0 +1,140 @@
+.contenedor {
+  align-items: flex-start;
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  min-height: 100vh;
+}
+
+.formulario {
+  background: #c27958;
+  border-radius: 5vh;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  margin-left: 5px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  min-width: 150vh;
+  padding: 35px;
+}
+
+.formulario p {
+  color: #114542;
+  font-size: 500%;
+  font-weight: 300;
+  margin-top: -2px;
+  text-align: center;
+}
+
+.formulario h3 {
+  color: #e0d4ca;
+  font-weight: 300;
+  font-size: 210%;
+}
+
+.formulario > div {
+  margin-bottom: 20px;
+}
+
+.formulario label {
+  color: #114542;
+  display: block;
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.formulario input,
+.formulario textarea {
+  border-radius: 5px;
+  border: 2px solid #e4bbad;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  margin-bottom: 20px;
+  margin-left: -10px;
+  padding: 8px;
+  width: 100%;
+}
+
+.formulario input:focus {
+  border: 2px solid #114542;
+  outline: none;
+}
+
+.formulario .error {
+  color: #814432;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  margin-top: -18px;
+}
+
+.formulario button[type="submit"] {
+  background: #114542;
+  border: none;
+  border-radius: 5px;
+  color: #e0d4ca;
+  cursor: pointer;
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px;
+  transition: 0.3s ease all;
+  width: 50%;
+}
+
+.formulario button[type="submit"]:hover {
+  background: #e0d4ca;
+  color: #114542;
+}
+
+.formulario .exito {
+  font-size: 20px;
+  font-weight: 500;
+  color: #814432;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.formulario input[type="radio"] {
+  margin-right: 5px;
+  width: auto;
+}
+
+.generoLabel p {
+  color: #114542;
+  display: block;
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.generoLabel label {
+  color: #e0d4ca;
+  font-weight: 300;
+}
+
+.estadoLabel p {
+  color: #114542;
+  display: block;
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.estadoLabel label {
+  color: #e0d4ca;
+  font-weight: 300;
+}
+
+.botonFinal {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  margin: 0 auto;
+}
