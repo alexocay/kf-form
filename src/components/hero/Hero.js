@@ -22,7 +22,7 @@ function Hero() {
   }, [currentScene, setCurrentScene]);
 
   return (
-    <div className="hero">
+    <div className="hero container">
       <IconHolder icon={currentScene.icon} text={currentScene.text} />
       <ImageHolder
         img={currentScene.image1}

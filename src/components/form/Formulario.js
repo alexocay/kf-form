@@ -355,7 +355,7 @@ const Formulario = () => {
         {({ errors }) => (
           <Form role="form" className="formulario">
             <div>
-              <p>Registro</p>
+              <p className="intro">Registro</p>
               <div className="form-group">
                 <h3>Datos Fiscales</h3>
                 <label htmlFor="razon">Razón Social</label>
@@ -399,7 +399,7 @@ const Formulario = () => {
                 <Field
                   type="text"
                   name="constitucion"
-                  placeholder="dd/mm/YYYY"
+                  placeholder="dd/mm/aaaa"
                   id="constitucion"
                 />
                 <ErrorMessage
@@ -588,7 +588,7 @@ const Formulario = () => {
                 <Field
                   type="text"
                   name="nombre"
-                  placeholder="Nombre"
+                  placeholder="Nombre Representante Legal"
                   id="nombre"
                 />
                 <ErrorMessage
@@ -693,7 +693,7 @@ const Formulario = () => {
                 />
                 <div className="estadoLabel">
                   <p htmlFor="estadoCivil">Estado Civil</p>
-                  <label>
+                  <label id="civil">
                     <Field
                       type="radio"
                       name="estadoCivil"
@@ -702,11 +702,11 @@ const Formulario = () => {
                     />
                     Soltero(a)
                   </label>
-                  <label>
+                  <label id="civil">
                     <Field type="radio" name="estadoCivil" value="Casado(a)" />
                     Casado(a)
                   </label>
-                  <label>
+                  <label id="civil">
                     <Field
                       type="radio"
                       name="estadoCivil"
@@ -714,7 +714,7 @@ const Formulario = () => {
                     />
                     Unión Libre
                   </label>
-                  <label>
+                  <label id="civil">
                     <Field
                       type="radio"
                       name="estadoCivil"
@@ -722,11 +722,11 @@ const Formulario = () => {
                     />
                     Divorciado(a)
                   </label>
-                  <label>
+                  <label id="civil">
                     <Field type="radio" name="estadoCivil" value="Viudo(a)" />
                     Viudo(a)
                   </label>
-                  <label>
+                  <label id="civil">
                     <Field type="radio" name="estadoCivil" value="pd" />
                     Prefiero no decirlo
                   </label>

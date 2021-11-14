@@ -1,28 +1,82 @@
-.contenedor {
-  align-items: flex-start;
+button {
+  margin: 0 auto;
+}
+
+.botonFinal {
   display: flex;
+  align-items: center;
   justify-content: center;
-  justify-self: center;
+}
+
+.contenedor {
   min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.estadoLabel #civil {
+  color: #e0d4ca;
+  font-weight: 300;
+}
+
+.estadoLabel p {
+  color: #114542;
+  display: block;
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 5px;
+  text-align: left;
 }
 
 .formulario {
-  background: #c27958;
-  border-radius: 5vh;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  margin-left: 5px;
+  min-width: 150vh;
   margin-top: 50px;
   margin-bottom: 50px;
-  min-width: 150vh;
+  background: #c27958;
+  border-radius: 5vh;
   padding: 35px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
-.formulario p {
+.formulario button[type="submit"] {
+  display: block;
+  background: #114542;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  padding: 10px;
+  border-radius: 5px;
+  color: #e0d4ca;
+  font-size: 16px;
+  transition: 0.3s ease all;
+}
+
+.formulario button[type="submit"]:hover {
+  background: #e0d4ca;
   color: #114542;
-  font-size: 500%;
-  font-weight: 300;
-  margin-top: -2px;
+}
+
+.formulario > div {
+  margin-bottom: 20px;
+}
+
+.formulario .error {
+  color: #814432;
+  font-weight: 600;
+  font-size: 15px;
+  margin-top: -18px;
+  margin-bottom: 20px;
+}
+
+.formulario .exito {
   text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  padding-top: 20px;
+  color: #e0d4ca;
 }
 
 .formulario h3 {
@@ -31,8 +85,25 @@
   font-size: 210%;
 }
 
-.formulario > div {
+.formulario input:focus {
+  outline: none;
+  border: 2px solid #114542;
+}
+
+.formulario input,
+.formulario textarea {
+  font-family: "Open Sans", sans-serif;
+  width: 100%;
+  border-radius: 5px;
+  border: 2px solid #e4bbad;
+  font-size: 16px;
+  padding: 10px;
   margin-bottom: 20px;
+}
+
+.formulario input[type="radio"] {
+  width: auto;
+  margin-right: 5px;
 }
 
 .formulario label {
@@ -41,64 +112,6 @@
   font-weight: 500;
   font-size: 20px;
   margin-bottom: 5px;
-}
-
-.formulario input,
-.formulario textarea {
-  border-radius: 5px;
-  border: 2px solid #e4bbad;
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-  margin-bottom: 20px;
-  margin-left: -10px;
-  padding: 8px;
-  width: 100%;
-}
-
-.formulario input:focus {
-  border: 2px solid #114542;
-  outline: none;
-}
-
-.formulario .error {
-  color: #814432;
-  font-size: 15px;
-  font-weight: 600;
-  margin-bottom: 20px;
-  margin-top: -18px;
-}
-
-.formulario button[type="submit"] {
-  background: #114542;
-  border: none;
-  border-radius: 5px;
-  color: #e0d4ca;
-  cursor: pointer;
-  display: block;
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  padding: 10px;
-  transition: 0.3s ease all;
-  width: 50%;
-}
-
-.formulario button[type="submit"]:hover {
-  background: #e0d4ca;
-  color: #114542;
-}
-
-.formulario .exito {
-  font-size: 20px;
-  font-weight: 500;
-  color: #814432;
-  padding-top: 20px;
-  text-align: center;
-}
-
-.formulario input[type="radio"] {
-  margin-right: 5px;
-  width: auto;
 }
 
 .generoLabel p {
@@ -115,26 +128,9 @@
   font-weight: 300;
 }
 
-.estadoLabel p {
+.intro {
   color: #114542;
-  display: block;
-  font-weight: 500;
-  font-size: 20px;
-  margin-bottom: 5px;
-  text-align: left;
-}
-
-.estadoLabel label {
-  color: #e0d4ca;
+  font-size: 500%;
   font-weight: 300;
-}
-
-.botonFinal {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
-
-button {
-  margin: 0 auto;
+  text-align: center;
 }
